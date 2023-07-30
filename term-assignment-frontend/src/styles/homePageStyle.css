@@ -1,0 +1,37 @@
+.card-w-notes {
+    background: #9852F9 !important;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.5vmin solid #05060f;
+    box-shadow: 0.8rem 0.8rem #05060f;
+    overflow: hidden;
+    color: black;
+    height: calc(100vh - 40px);
+    width: 500px;
+}
+.card-w-img {
+    background: #00FFAB !important;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.5vmin solid #05060f;
+    box-shadow: 0.8rem 0.8rem #05060f;
+    overflow: hidden;
+    color: black;
+    height: calc(100vh - 40px);
+    width: 500px;
+}
+.container{
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.card-title{
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 900;
+    font-family: Roboto, serif;
+}
+body{
+    background: #2f2d45 !important;
+    font-family: Roboto, serif;
+}
