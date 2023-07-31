@@ -19,7 +19,7 @@ const HomePage = () => {
     const [englishMP3, setEnglishMP3] = useState('')
 
 
-    const apigatewayurl = process.env.REACT_APP_API_GATEWAY_URL;
+    const apigatewayurl = process.env.REACT_APP_API_GATEWAY_URL+'/process-image';
 
 
     useEffect(() => {
@@ -40,7 +40,7 @@ const HomePage = () => {
                  const requestData = {
                      image: imageAsBase64,
                  };
-                 axios.post(apigatewayurl+'/process-image', requestData).then((response) => {
+                 axios.post(apigatewayurl, requestData).then((response) => {
                          console.log(response.data);
                          setDetectedTextEnglish(response.data.translated_text_english)
                          setDetectedTextSpanish(response.data.translated_text_spanish)
