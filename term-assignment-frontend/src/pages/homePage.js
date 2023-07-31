@@ -19,7 +19,7 @@ const HomePage = () => {
     const [englishMP3, setEnglishMP3] = useState('')
 
 
-    const apigatewayurl = process.env.API_GATEWAY_URL;
+    const apigatewayurl = process.env.REACT_APP_API_GATEWAY_URL;
 
 
     useEffect(() => {
