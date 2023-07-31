@@ -18,15 +18,9 @@ const HomePage = () => {
     const [spanishMP3, setSpanishMP3] = useState('')
     const [englishMP3, setEnglishMP3] = useState('')
 
-    const API_GATEWAY_URL= 'https://qhma71kpxk.execute-api.us-east-1.amazonaws.com/process-image'
 
+    const apigatewayurl = process.env.API_GATEWAY_URL;
 
-    const response = {
-        "spanish_sound_url": "https://csci5409-text-to-speech.s3.amazonaws.com/sound_spanish.mp3",
-        "english_sound_url": "https://csci5409-text-to-speech.s3.amazonaws.com/sound_english.mp3",
-        "translated_text_spanish": "Tu ansiedad te está mintiendo. Eres amado. Todo va a salir bien. No somos realmente extraños ",
-        "translated_text_english": "Your anxiety is lying to you. You are loved. Everything will be okay. We're Not Really Strangers "
-    };
 
     useEffect(() => {
         console.log('englishMP3 updated:', englishMP3);
@@ -46,7 +40,7 @@ const HomePage = () => {
                  const requestData = {
                      image: imageAsBase64,
                  };
-                 axios.post(API_GATEWAY_URL, requestData).then((response) => {
+                 axios.post(apigatewayurl+'/process-image', requestData).then((response) => {
                          console.log(response.data);
                          setDetectedTextEnglish(response.data.translated_text_english)
                          setDetectedTextSpanish(response.data.translated_text_spanish)
@@ -61,12 +55,6 @@ const HomePage = () => {
         if (file) {
             reader.readAsDataURL(file);
         }
-        /*
-        setDetectedTextEnglish(response.translated_text_english)
-        setDetectedTextSpanish(response.translated_text_spanish)
-        setEnglishMP3(response.english_sound_url)
-        setSpanishMP3(response.spanish_sound_url)
-        */
     };
 
     return (
