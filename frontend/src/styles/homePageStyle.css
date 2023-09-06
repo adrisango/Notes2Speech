@@ -2,8 +2,8 @@
     background: #9852F9 !important;
     padding: 1rem;
     border-radius: 1rem;
-    border: 0.5vmin solid #05060f;
-    box-shadow: 0.8rem 0.8rem #05060f;
+    border: 0.5vmin solid black;
+    box-shadow: 0.7rem 0.8rem black;
     overflow: hidden;
     color: black;
     height: calc(100vh - 40px);
@@ -13,8 +13,8 @@
     background: #00FFAB !important;
     padding: 1rem;
     border-radius: 1rem;
-    border: 0.5vmin solid #05060f;
-    box-shadow: 0.8rem 0.8rem #05060f;
+    border: 0.5vmin solid black;
+    box-shadow: 0.7rem 0.8rem black;
     overflow: hidden;
     color: black;
     height: calc(100vh - 40px);
