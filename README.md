@@ -2,7 +2,7 @@
 
 **Notes2Speech** is a project developed with a primary focus on utilizing Amazon Web Services (AWS) cloud services and harnessing the power of AWS CloudFormation for automatic service provisioning. The core objective of this project is to simplify the conversion of handwritten study notes into digital formats.
 
-Notes2Speech simplifies the process of turning handwritten notes into digital text. Users upload images of their handwritten notes, and the system handles the conversion, transforming these images into digital text. What sets this project apart is its bilingual support, as it can provide text in both English and Spanish. Additionally, it generates audio files in both languages, allowing users to listen to the content of their notes, which can be a helpful study aid.
+Notes2Speech simplifies the process of turning handwritten notes into digital text. Users upload images of their handwritten notes, and the system handles the conversion, transforming these images into digital text. This project can provide text in both English and Spanish and generates audio files in both languages, allowing users to listen to the content of their notes, which can be a helpful study aid.
 
 By automating the setup and management of these AWS services through AWS CloudFormation, Notes2Speech ensures a robust, scalable, and hands-free infrastructure.
 ## Target Users
